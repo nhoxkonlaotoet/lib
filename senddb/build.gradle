@@ -4,7 +4,7 @@ plugins {
 }
 
 group='com.github.nhoxkonlaotoet'
-version = '1.0'
+version = '1.1'
 
 android {
     compileSdk 28
@@ -12,8 +12,8 @@ android {
     defaultConfig {
         minSdk 19
         targetSdk 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -33,11 +33,8 @@ android {
 
 dependencies {
     implementation 'com.google.firebase:firebase-storage:20.0.1'
-    implementation 'androidx.appcompat:appcompat:1.0.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
 }
 
 afterEvaluate {
@@ -48,7 +45,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.nhoxkonlaotoet'
                 artifactId = 'senddb'
-                version = '0.0.13'
+                version = '1.1'
             }
         }
     }
